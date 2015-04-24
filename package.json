@@ -9,5 +9,6 @@
     "metrika"
   ],
   "author": "mikaspell",
+  "git": "https://github.com/mikaspell/gitbook-plugin-yametrika",
   "license": "MIT"
 }
