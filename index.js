@@ -6,7 +6,7 @@ module.exports = {
         ],
         html: {
             "body:end": function() {
-                var config = this.options.pluginsConfig.yamarket || {};
+                var config = this.options.pluginsConfig.yametrika || {};
                 
                 if (!config.number) {
                 	throw "Need to option 'number' for Yandex Metrika plugin";

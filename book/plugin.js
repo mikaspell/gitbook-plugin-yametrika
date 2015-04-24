@@ -1,6 +1,6 @@
 require(["gitbook"], function(gitbook) {
     gitbook.events.bind("start", function(e, config) {
-        config.yamarket = config.yamarket || {};
+        config.yametrika = config.yametrika || {};
     });
 
     gitbook.events.bind("page.change", function() {
