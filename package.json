@@ -3,12 +3,19 @@
   "version": "1.0.2",
   "description": "Yandex Metrika tracking for your gitbook",
   "main": "index.js",
+  "engines": {
+    "gitbook": ">=0.4.6"
+  },
+  "homepage": "https://github.com/mikaspell/gitbook-plugin-yametrika",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikaspell/gitbook-plugin-yametrika.git"
+  },
   "keywords": [
     "gitbook",
     "yandex",
     "metrika"
   ],
   "author": "mikaspell",
-  "git": "https://github.com/mikaspell/gitbook-plugin-yametrika",
   "license": "MIT"
 }
