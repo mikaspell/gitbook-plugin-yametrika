@@ -1,7 +1,7 @@
 {
   "name": "gitbook-plugin-yametrika",
-  "version": "1.0.3",
   "description": "Yandex Metrika tracking for your gitbook",
+  "version": "1.0.3",
   "main": "index.js",
   "engines": {
     "gitbook": ">=0.4.6"
@@ -13,6 +13,7 @@
   },
   "keywords": [
     "gitbook",
+    "tracking",
     "yandex",
     "metrika"
   ],
