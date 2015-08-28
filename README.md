@@ -27,7 +27,7 @@ You can set the Yandex Metrika tracking ID using the plugins configuration in th
     "plugins": ["yametrika"],
     "pluginsConfig": {
         "yametrika": {
-            "number": xxxxxxx
+            "number": 1111111
         }
     }
 }
@@ -40,7 +40,7 @@ You can customize the tracker object by passing additional configuration options
     "plugins": ["yametrika"],
     "pluginsConfig": {
         "yametrika": {
-            "number": xxxxxxx,
+            "number": 11111111,
             "settings": {
                 "webvisor": true,
                 "clickmap": true,
