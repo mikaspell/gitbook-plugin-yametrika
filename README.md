@@ -27,20 +27,50 @@ You can set the Yandex Metrika tracking ID using the plugins configuration in th
     "plugins": ["yametrika"],
     "pluginsConfig": {
         "yametrika": {
-            "number": "xxxxxxx"
+            "number": xxxxxxx
         }
     }
 }
 ```
 
+You can customize the tracker object by passing additional configuration options.
+
+``` json
+{
+    "plugins": ["yametrika"],
+    "pluginsConfig": {
+        "yametrika": {
+            "number": xxxxxxx,
+            "settings": {
+                "webvisor": true,
+                "clickmap": true,
+                "trackLinks": true,
+                "accurateTrackBounce": true,
+                "trackHash": true,
+                "ut": "noindex"
+            }
+        }
+    }
+}
+```
+Available for customize options:
+- Webvisor (Вебвизор)
+- Clickmap (Карта кликов)
+- TrackLinks (Внешние ссылки, загрузки файлов и отчёт по кнопке «Поделиться»)
+- AccurateTrackBounce (Точный показатель отказов)
+- TrackHash (Отслеживание хеша в адресной строке)
+- Ut (Запрет на индексацию страниц)
+
+> ##### To use the option, you must specify it in the object "settings" with the status "true", if you do not want to use - just do not specify the object "settings"
+
 #### NOTICE
 
-default track options:
+default track options status:
 
-- Webvisor (Вебвизор) - **true**
-- Clickmap (Карта кликов) - **true**
-- TrackLinks (Внешние ссылки, загрузки файлов и отчёт по кнопке «Поделиться») - **true**
-- AccurateTrackBounce (Точный показатель отказов) - **true**
+- Webvisor (Вебвизор) - **false** (!new)
+- Clickmap (Карта кликов) - **false** (!new)
+- TrackLinks (Внешние ссылки, загрузки файлов и отчёт по кнопке «Поделиться») - **false** (!new) 
+- AccurateTrackBounce (Точный показатель отказов) - **false**  (!new)
 - Informer (Информер) - **false**
 - Ut (Запрет на индексацию страниц) - **false**
 - Async (Асинхронный код) - **true**
@@ -51,4 +81,4 @@ default track options:
 
 #### TO DO
 
-Include choose the *default* options in book.son.
+Include choose the *Informer*, *Async*, *XML*, *Params example*, *OneRow* options in book.json.
