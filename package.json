@@ -18,5 +18,14 @@
     "metrika"
   ],
   "author": "mikaspell",
-  "license": "MIT"
+  "license": "MIT",
+  "gitbook": {
+    "properties": {
+      "id": {
+        "type": "number",
+        "description": "Yandex Metrika tracking ID",
+        "required": true
+      }
+    }
+  }
 }
