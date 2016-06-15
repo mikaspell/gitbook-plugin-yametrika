@@ -4,7 +4,7 @@ This is a best tracker from Russia! Enjoy it!
 
 ### Install
 
-``` 
+```
 $ npm install gitbook-plugin-yametrika
 ```
 
@@ -53,6 +53,25 @@ You can customize the tracker object by passing additional configuration options
     }
 }
 ```
+
+When using GitBook 3, the whole configuration settings should be set directly in the `"yametrika"` property, using the default configuration for the API:
+``` json
+{
+    "plugins": ["yametrika"],
+    "pluginsConfig": {
+        "yametrika": {
+            "id": 11111111,
+            "webvisor": true,
+            "clickmap": true,
+            "trackLinks": true,
+            "accurateTrackBounce": true,
+            "trackHash": true,
+            "ut": "noindex"
+        }
+    }
+}
+```
+
 Available for customize options:
 - Webvisor (Вебвизор)
 - Clickmap (Карта кликов)
@@ -69,7 +88,7 @@ default track options status:
 
 - Webvisor (Вебвизор) - **false** (!new)
 - Clickmap (Карта кликов) - **false** (!new)
-- TrackLinks (Внешние ссылки, загрузки файлов и отчёт по кнопке «Поделиться») - **false** (!new) 
+- TrackLinks (Внешние ссылки, загрузки файлов и отчёт по кнопке «Поделиться») - **false** (!new)
 - AccurateTrackBounce (Точный показатель отказов) - **false**  (!new)
 - Informer (Информер) - **false**
 - Ut (Запрет на индексацию страниц) - **false**
